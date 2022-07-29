@@ -1,0 +1,30 @@
+body{
+    background-color: #f5f6fe;
+    font-size: 16px;
+}
+
+nav{
+    display:flex;
+}
+
+
+nav ul {
+    display: flex;
+
+}
+
+
+
+nav li {
+    list-style-type:none;
+    display:inline-block;
+    padding-right: 30px;
+}
+
+
+
+nav img {
+    height:64px;
+    width:auto;
+    margin-right: auto;
+}
