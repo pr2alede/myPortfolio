@@ -50,7 +50,7 @@ nav a:link {
 
 nav a:hover {
     color: #ecebf3 !important;
-    background-color: #002B53;c;
+    background-color: #002B53;
     
 
   }
@@ -61,7 +61,7 @@ nav a:hover {
 
 
 
-.AboutMe{
+main{
     margin:0;
     background-image:url("../images/background.jpg");
     background-position: center;
@@ -74,7 +74,7 @@ nav a:hover {
 
 }
 
-.AboutMe img{
+main img{
     height: 80%;
     width: auto;
     margin-right: 10%;
@@ -117,4 +117,46 @@ nav a:hover {
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
+  }
+
+  .section{
+    width: 50%;
+    padding:2%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+  }
+
+  .section h1{
+    text-align: center;
+  }
+
+  .section p{
+    font-size: 1.5rem;
+  }
+
+  .skillsContainer{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+  }
+
+  .skillContainer{
+    margin-left:10px;
+    margin-bottom:10px;
+    align-items: center;
+    display:flex;
+    font-size: 1.2rem;
+    background-color:#7f95a9;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .skillContainer img{
+    height:60px;
+    padding-right: 20px;
   }
