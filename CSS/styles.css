@@ -1,10 +1,18 @@
 body{
-    background-color: #f5f6fe;
     font-size: 16px;
+    color: #002B53;
+    background-color: #ecebf3;
+    font-family: 'Josefin Sans', sans-serif;
+    margin:0;
 }
 
 nav{
     display:flex;
+    position: sticky; top: 0;
+    z-index: 1;
+    font-size: 1.3rem;
+    background-color: #ecebf3;
+
 }
 
 
@@ -22,9 +30,91 @@ nav li {
 }
 
 
-
+nav a{
+    padding:10px;
+    border-radius: 12px
+}
 nav img {
     height:64px;
     width:auto;
     margin-right: auto;
+
 }
+
+
+
+nav a:link {
+    text-decoration: none;
+    color: #002B53;
+}
+
+nav a:hover {
+    color: #ecebf3 !important;
+    background-color: #002B53;c;
+    
+
+  }
+
+  nav a:visited {
+    color: #002B53;;
+  }
+
+
+
+.AboutMe{
+    margin:0;
+    background-image:url("../images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:720px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.AboutMe img{
+    height: 80%;
+    width: auto;
+    margin-right: 10%;
+}
+
+.Description{
+    font-size: 2rem;
+    padding-left: 40px;
+    width:50%;
+
+}
+
+.Description span {
+ 
+    font-size: 4rem;
+
+}
+.typewriter{
+    display: inline-block;
+}
+.typewriter p {
+    color: #78e1f7;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
