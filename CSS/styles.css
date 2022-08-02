@@ -171,7 +171,12 @@ main img{
     text-align: center;
   }
 
+
   .section p{
+    font-size: 1.5rem;
+  }
+
+  .section ul{
     font-size: 1.5rem;
   }
 
@@ -218,12 +223,106 @@ main img{
   #Projects{
     scroll-margin-top: 20rem;
     background-color: #002B53;
+    
   }
 
   #Projects .section{
     color: #ecebf3
 
   }
+
+  .projectsContainer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin:auto;
+    margin-bottom: 20px;
+  }
+
+  .project img{
+    height: 320px;
+    padding: 10px;
+    width:auto;
+  }
+
+  .project li{
+    padding: 10px;
+  }
+
+  .project a{
+    text-decoration: none;
+  }
+
+  .project a:link {
+    color: #ecebf3;
+  
+  }
+
+  .project a:visited {
+    color: #ecebf3;
+  }
+  
+
+  button{
+    margin: 10px;
+    background-color: #f7b633;
+    font-size: 16px;
+    color: #002B53;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  #mind{
+    display:none;
+    
+  }
+
+  #department{
+    display:none;
+    
+  }
+#Contact{
+  scroll-margin-top: 20rem;
+}
+  #Contact ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+   
+  }
+
+  #Contact li{
+    margin: auto;
+ }
+
+  #Contact img{
+    height:128px;
+    width:auto;
+  }
+
+  footer{
+    background-color:  #002B53;
+    color:#ecebf3;
+    padding: 20px;
+  }
+
+  footer a:link {
+    color: #f7b633
+}
+
+footer a:visited {
+  color: #f7b633
+  }
+
+
+
+  
 
   @media screen and (max-width: 900px) {
 
