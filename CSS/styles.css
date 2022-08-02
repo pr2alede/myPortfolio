@@ -12,20 +12,23 @@ nav{
     z-index: 1;
     font-size: 1.3rem;
     background-color: #ecebf3;
+    align-items: center;
+    border-bottom: solid #002B53;
 
 }
 
 
 nav ul {
     display: flex;
-
+    align-items: center;
 }
 
 
 
 nav li {
+    
     list-style-type:none;
-    display:inline-block;
+  
     padding-right: 30px;
 }
 
@@ -38,6 +41,7 @@ nav img {
     height:64px;
     width:auto;
     margin-right: auto;
+    padding: 20px;
 
 }
 
@@ -59,9 +63,41 @@ nav a:hover {
     color: #002B53;;
   }
 
+#menuLogo{
+  display:none;
+  cursor: pointer;
+}
+
+
+
+#navLinks{
+  display: flex;
+}
+
+#dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  position: sticky; top: 144px;
+}
+
+#dropdown-content a {
+  text-align: center;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdown-content a:hover {background-color: #f1f1f1}
+
+
+
 
 
 main{
+  scroll-margin-top: 20rem;
     margin:0;
     background-image:url("../images/background.jpg");
     background-position: center;
@@ -98,7 +134,7 @@ main img{
     display: inline-block;
 }
 .typewriter p {
-    color: #78e1f7;
+    color: #f7b633;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -118,10 +154,11 @@ main img{
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #f7b633; }
   }
 
   .section{
+    scroll-margin-top: 100%;;
     width: 50%;
     padding:2%;
     margin-left: auto;
@@ -174,6 +211,20 @@ main img{
     font-size: 100%;
   }
 
+  #About{
+    scroll-margin-top: 20rem;
+  }
+
+  #Projects{
+    scroll-margin-top: 20rem;
+    background-color: #002B53;
+  }
+
+  #Projects .section{
+    color: #ecebf3
+
+  }
+
   @media screen and (max-width: 900px) {
 
     .skillContainer span{
@@ -191,11 +242,14 @@ main img{
    main{
     flex-direction: column;
     justify-content: center;
+    align-items: center;
    }
 
    main img{
     max-height: 300px;
     max-width: 300px;
+    margin-right: 0;
+
    }
   .Description{
       font-size: 1rem;
@@ -209,4 +263,27 @@ main img{
   
   }
 }
+
+@media screen and (min-width: 600px) {
+ 
+  #dropdown-content {
+    display:none;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  #menuLogo{
+    display:flex;
+  }
+
+  #navLinks{
+    display: none;
+  }
+  
+
+}
+
+
+ 
   
