@@ -320,10 +320,6 @@ footer a:visited {
   color: #f7b633
   }
 
-
-
-  
-
   @media only screen and (max-width: 900px) {
 
     .skillContainer span{
@@ -363,13 +359,7 @@ footer a:visited {
   }
 }
 
-@media only screen and (min-width: 600px) {
- 
-  #dropdown-content {
-    display:none;
-  }
 
-}
 
 @media only screen and (max-width: 600px) {
   #menuLogo{
@@ -382,6 +372,15 @@ footer a:visited {
   
 
 }
+
+
+
+
+
+  
+
+
+
 
 
  
